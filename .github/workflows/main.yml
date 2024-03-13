@@ -7,6 +7,6 @@ on:
 jobs:
 
   go-lint:
-    uses: estenrye/.github/.github/workflows/golangci-lint.yaml@v0.1.17
+    uses: estenrye/.github/.github/workflows/golangci-lint.yaml@v0.1.18
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
