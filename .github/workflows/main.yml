@@ -1,10 +1,12 @@
-name: Go Release
+name: Go Linting
 on:
   workflow_dispatch:
+  push:
   release:
     types: [created]
 jobs:
 
   go-lint:
-    uses: estenrye/.github/.github/workflows/golangci-lint.yaml@v0.1.8
-
+    uses: estenrye/.github/.github/workflows/golangci-lint.yaml@v0.1.15
+    secrets:
+      github_token: ${{ secrets.GITHUB_TOKEN }}
