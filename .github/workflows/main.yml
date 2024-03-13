@@ -1,0 +1,10 @@
+name: Go Release
+on:
+  workflow_dispatch:
+  release:
+    types: [created]
+jobs:
+
+  go-lint:
+    uses: estenrye/.github/.github/workflows/golang-slsa-releaser.yml@v0.1.7
+
