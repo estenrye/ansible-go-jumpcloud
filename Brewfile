@@ -1,1 +1,2 @@
 brew "act"
+brew "gh"
