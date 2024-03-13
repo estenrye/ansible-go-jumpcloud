@@ -10,3 +10,5 @@ jobs:
     uses: estenrye/.github/.github/workflows/golangci-lint.yaml@v0.1.25
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
+    with:
+      golangci_lint_config_path: .golangci.yaml
